@@ -1,0 +1,7 @@
+{
+    "GREETING": "Hallo, {{name}}",
+    "CONFIRM_INSTALL": "Ihre Anwendung wurde erfolgreich installiert!",
+    "ENGLISH": "Englisch",
+    "DEUTCH": "Deutch",
+    "SUCCESS": "dude"
+}

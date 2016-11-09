@@ -1,0 +1,13 @@
+{
+    "extends": "standard",
+    "parser": "babel-eslint",
+    "rules": {
+        "semi": [1, "always"],
+        "strict": 0,
+        "indent": [2, 4, {"SwitchCase": 1}],
+        "space-before-blocks": [1, "always"],
+        "padded-blocks": [1, {"classes": "always"}],
+        "space-before-function-paren": [1, "always"],
+        "no-trailing-spaces": [1]
+    }
+}

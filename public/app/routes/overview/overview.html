@@ -1,0 +1,17 @@
+
+<div class="row">
+
+    <h1>{{app.settings.title}}</h1>
+
+    <h2 translate="GREETING" translate-value-name="{{ctrl.user.first_name}}"></h2>
+
+    <p translate="CONFIRM_INSTALL"></p>
+
+</div>
+<div class="row">
+    <spsui-feedback-container lang="ctrl.lang" feedback-id="feedbackContainer"></spsui-feedback-container>
+</div>
+<div class="row">
+    <button translate="ENGLISH" ng-click="ctrl.switchLang('en')"></button>
+    <button translate="DEUTCH" ng-click="ctrl.switchLang('de')"></button>
+</div>

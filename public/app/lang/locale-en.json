@@ -2,6 +2,5 @@
     "GREETING": "Hello, {{name}}",
     "CONFIRM_INSTALL": "Your app has been successfully installed!",
     "ENGLISH": "English",
-    "DEUTCH": "German",
-    "SUCCESS": "floyd"
+    "DEUTCH": "German"
 }

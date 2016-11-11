@@ -8,7 +8,7 @@ import {AppController} from './app.ctrl';
 import {Router} from './modules/router/router.module';
 
 import 'angular-translate';
-import 'angular-translate-loader-static-files';
+import 'angular-translate-loader-partial';
 
 let AppDependencies = [
     WebuiCore.name,
@@ -26,7 +26,7 @@ export let App = angular
 
 export let name = App.name;
 
-AppConfig.$inject = ['$translateProvider'];
+AppConfig.$inject = ['$translateProvider', '$translatePartialLoaderProvider'];
 
 /**
  * Setup that runs during application configuration phase.
@@ -34,11 +34,12 @@ AppConfig.$inject = ['$translateProvider'];
  *
  * @constructor
  */
-function AppConfig ($translateProvider) {
+function AppConfig ($translateProvider, $translatePartialLoaderProvider) {
+    $translateProvider.useSanitizeValueStrategy('escape');
+    $translatePartialLoaderProvider.addPart('apps/test-app/1.0');
     $translateProvider
-    .useStaticFilesLoader({
-        prefix: 'app/lang/locale-',
-        suffix: '.json'
+    .useLoader('$translatePartialLoader', {
+        urlTemplate: 'https://s3.amazonaws.com/static-assets.spscommerce.com/framework/i18n/{part}/{lang}.json'
     });
     $translateProvider
     .preferredLanguage('en')

@@ -2,14 +2,18 @@
 <div class="row">
 
     <h1>{{app.settings.title}}</h1>
+    
 
-    <h2 translate="GREETING" translate-value-name="{{ctrl.user.first_name}}"></h2>
+    <h2 translate="GREETING" translate-values='{ name: ctrl.user.name.first }'></h2>
 
     <p translate="CONFIRM_INSTALL"></p>
 
 </div>
 <div class="row">
-    <spsui-feedback-container lang="ctrl.lang" feedback-id="feedbackContainer"></spsui-feedback-container>
+    <spsui-feedback-container feedback-id="feedbackContainer"></spsui-feedback-container>
+</div>
+<div class="row">
+    <spsui-feedback-msg type="error" localize="true" localize-values='{ name: ctrl.user.name.first }'>GREETING</spsui-feedback-msg>
 </div>
 <div class="row">
     <button translate="ENGLISH" ng-click="ctrl.switchLang('en')"></button>

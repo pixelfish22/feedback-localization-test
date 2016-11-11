@@ -13,9 +13,11 @@ System.config({
   },
 
   map: {
+    "SPSCommerce/webui-feedback": "github:SPSCommerce/webui-feedback@1.1.2",
     "angular": "github:angular/bower-angular@1.4.8",
     "angular-mocks": "github:angular/bower-angular-mocks@1.4.8",
     "angular-translate": "github:angular-translate/bower-angular-translate@2.13.0",
+    "angular-translate-loader-partial": "github:angular-translate/bower-angular-translate-loader-partial@2.13.0",
     "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.13.0",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
@@ -32,7 +34,7 @@ System.config({
     "text": "github:systemjs/plugin-text@0.0.7",
     "ui-router-extras": "github:christopherthielen/ui-router-extras@0.0.14",
     "webui-core": "github:SPSCommerce/webui-core@2.3.8",
-    "webui-feedback": "github:webui-feedback@1.1.2",
+    "webui-feedback": "github:SPSCommerce/webui-feedback@1.1.2",
     "github:SPSCommerce/webui-core@2.3.6": {
       "angular": "github:angular/bower-angular@1.4.8",
       "angular-cookie": "github:ivpusic/angular-cookie@4.0.10",
@@ -74,6 +76,21 @@ System.config({
       "moment-timezone": "npm:moment-timezone@0.5.4",
       "text": "github:systemjs/plugin-text@0.0.7",
       "webfont": "github:components/webfontloader@1.6.3"
+    },
+    "github:SPSCommerce/webui-feedback@1.1.2": {
+      "angular": "github:angular/bower-angular@1.4.8",
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.13.0",
+      "angular-translate-loader-partial": "github:angular-translate/bower-angular-translate-loader-partial@2.13.0",
+      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.13.0",
+      "css": "github:systemjs/plugin-css@0.1.20",
+      "jquery": "npm:jquery@2.1.4",
+      "lodash": "npm:lodash@3.10.1",
+      "text": "github:systemjs/plugin-text@0.0.7",
+      "webui-core": "github:SPSCommerce/webui-core@2.3.6"
+    },
+    "github:angular-translate/bower-angular-translate-loader-partial@2.13.0": {
+      "angular": "github:angular/bower-angular@1.4.8",
+      "angular-translate": "github:angular-translate/bower-angular-translate@2.13.0"
     },
     "github:angular-translate/bower-angular-translate-loader-static-files@2.13.0": {
       "angular-translate": "github:angular-translate/bower-angular-translate@2.13.0"
@@ -136,16 +153,6 @@ System.config({
     },
     "github:jspm/nodelibs-vm@0.1.0": {
       "vm-browserify": "npm:vm-browserify@0.0.4"
-    },
-    "github:webui-feedback@1.1.2": {
-      "angular": "github:angular/bower-angular@1.4.8",
-      "angular-translate": "github:angular-translate/bower-angular-translate@2.13.0",
-      "angular-translate-loader-static-files": "github:angular-translate/bower-angular-translate-loader-static-files@2.13.0",
-      "css": "github:systemjs/plugin-css@0.1.20",
-      "jquery": "npm:jquery@2.1.4",
-      "lodash": "npm:lodash@3.10.1",
-      "text": "github:systemjs/plugin-text@0.0.7",
-      "webui-core": "github:SPSCommerce/webui-core@2.3.6"
     },
     "github:xdan/datetimepicker@2.4.5": {
       "jquery": "npm:jquery@2.1.4"
